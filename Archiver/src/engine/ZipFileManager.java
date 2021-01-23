@@ -38,7 +38,7 @@ public class ZipFileManager {
                 // If we archiving the directory then we need get file list in it
                 FileManager fileManager = new FileManager(source);
                 List<Path> fileNames = fileManager.getFileList();
-                // Добавляем каждый файл в архив
+                // Add each file in the archive
                 for (Path fileName : fileNames)
                     addNewZipEntry(zipOutputStream, source, fileName);
             } else if (Files.isRegularFile(source)) {
