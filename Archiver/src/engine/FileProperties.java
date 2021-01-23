@@ -44,7 +44,7 @@ public class FileProperties {
             builder.append(size / 1024);
             builder.append(" Kb (");
             builder.append(compressedSize / 1024);
-            builder.append(" Kb) сжатие: ");
+            builder.append(" Kb) compression: ");
             builder.append(getCompressionRatio());
             builder.append("%");
         }
