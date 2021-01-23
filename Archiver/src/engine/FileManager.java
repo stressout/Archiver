@@ -22,7 +22,7 @@ public class FileManager {
     }
 
     private void collectFileList(Path path) throws IOException {
-        // Добавляем только файлы
+        // Adding only regular files
         if (Files.isRegularFile(path)) {
             Path relativePath = rootPath.relativize(path);
             fileList.add(relativePath);
